@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input-group label {
+    margin-right: 10px;
+}
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.bus {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 320px;
+    margin: 20px auto;
+    border: 2px solid black;
+    padding: 10px;
+    background: white;
+}
+
+.seat {
+    width: 60px;
+    height: 40px;
+    margin: 5px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.available {
+    background-color: #4CAF50; /* أخضر */
+    color: white;
+}
+
+.booked {
+    background-color: #808080; /* رمادي */
+    color: white;
+}

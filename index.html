@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚍 نظام حجز مقاعد الباص</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <h1>🚍 نظام حجز مقاعد الباص</h1>
+
+    <div class="controls">
+        <div class="input-group">
+            <label for="passengerName">👤 الاسم:</label>
+            <input type="text" id="passengerName" placeholder="أدخل اسمك">
+        </div>
+
+        <div class="input-group">
+            <label for="gender">⚧ الجنس:</label>
+            <select id="gender">
+                <option value="M">ذكر</option>
+                <option value="F">أنثى</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="mahram">🛡️ هل لديك محرم؟</label>
+            <select id="mahram">
+                <option value="no">لا</option>
+                <option value="yes">نعم</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="seatNumber">🎟️ رقم المقعد:</label>
+            <input type="number" id="seatNumber" min="1" max="40" placeholder="1-40">
+        </div>
+
+        <div class="button-group">
+            <button id="bookButton">🛒 حجز المقعد</button>
+            <button id="resetButton">🔄 إعادة تعيين</button>
+            <button id="emptySeatsButton">🟢 عرض المقاعد الفارغة</button>
+            <button id="bookedSeatsButton">🔴 عرض المقاعد المحجوزة</button>
+            <button id="passengersButton">👥 عرض جميع الركاب</button>
+        </div>
+    </div>
+
+    <div id="message"></div>
+
+    <div class="bus">
+        <div id="seats"></div>
+    </div>
+
+</body>
+</html>
